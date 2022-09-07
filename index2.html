@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>選手名簿２０２２</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		div {
+			box-sizing: border-box;
+			/* border:solid 1px red */
+		}
+
+		.hanrei {
+			width: 20px;
+			height: 20px;
+			background-color: red;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 3px;
+		}
+
+		.gakunen {
+			width: 5ex;
+		}
+
+		.seiseki {
+			width: 60ex;
+		}
+
+		.container {
+			display: flex;
+		}
+
+		.name {
+			background-color: rgb(80, 130, 240);
+			color: white;
+			font-weight: 700;
+			padding: 5px;
+
+		}
+
+		.entry {
+			width: 220px;
+			margin-right: 40px;
+		}
+
+		.titleEnglish {
+			font-size: 20pt;
+			margin-bottom: 10px;
+			background-color: darkturquoise;
+			width: 400px;
+			text-align: center;
+		}
+
+		.color3nen {
+			background-color: darkturquoise;
+		}
+
+		.color2nen {
+			background-color: yellow;
+		}
+
+		.color1nen {
+			background-color: pink;
+
+		}
+
+		.hanreiGroup {
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<img src="./images/title-logo.png" alt="">
+	<div class="titleEnglish">Members Introduction</div>
+	<div class="container hanreiGroup">
+		<div class="hanrei color3nen"></div>
+		<div class="gakunen">3年生</div>
+		<div class="hanrei color2nen"></div>
+		<div class="gakunen">2年生</div>
+		<div class="hanrei color1nen"></div>
+		<div class="gakunen">1年生</div>
+	</div>
+
+	<div class="seiseki">
+		【 主な成績 】<br>
+		2020.10 第 91 回 都市対抗野球大会 九州地区予選 ベスト 4 <br>
+		2021.03 第 65 回 福岡県会長杯 準優勝 <br>
+	</div>
+	<div>
+		<div class="entry">
+			<div class="position">総監督</div>
+			<div class="name">渡邊　浩令</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="entry">
+			<div class="position">部長</div>
+			<div class="name">松永 由水</div>
+		</div>
+		<div class="entry">
+			<div class="position">部長</div>
+			<div class="name">佐藤 義行</div>
+		</div>
+	</div>
+	<!-- ここから選手分を繰り返す -->
+	<div class="container">
+		<div class="entry">
+			<div class="position"> 監督（沖データ） </div>
+			<div class="name"> 林　亮介</div>
+		</div>
+		<div class="entry">
+			<div class="position"> 監督（CKGアカデミー）</div>
+			<div class="name"> 服部　文夫</div>
+		</div>
+		<div class="entry">
+			<div class="position"> 助監督</div>
+			<div class="name"> 有田　博紀</div>
+		</div>
+
+	</div>
+	<div class="container">
+		<div class="entry">
+			<div class="position"> コーチ
+			</div>
+			<div class="name"> 久保山 道弘</div>
+		</div>
+		<div class="entry">
+			<div class="position"> コーチ</div>
+			<div class="name"> 小栁　隆二</div>
+		</div>
+
+	</div>
+	<div class="container">
+		<div class="entry">
+			<div class="position"> コーチ兼マネージャー</div>
+			<div class="name"> 緒方　　保</div>
+		</div>
+		<div class="entry">
+			<div class="position"> コーチ</div>
+			<div class="name"> 西村 洋平</div>
+		</div>
+		<div class="entry">
+			<div class="position"> マネージャー</div>
+			<div class="name"> 勝山　遥人</div>
+		</div>
+	</div>
+<!-- 
+	監督（沖データ）
+	林　亮介
+	監督（CKGアカデミー）
+	服部　文夫
+	助監督
+	有田　博紀
+	コーチ
+	久保山 道弘
+	コーチ
+	小栁　隆二
+	コーチ兼マネージャー
+	緒方　　保
+	コーチ
+	西村 洋平
+	マネージャー
+	勝山　遥人
+ -->
+	<!-- <div class="entry">
+		<div class="position"> </div>
+		<div class="name"> </div>
+	</div> -->
+<!-- 
+	#14 投手
+	矢島 有也
+	#16 投手
+	田代 昌椰
+	#42 投手
+	山下 弘翔
+	#45 投手
+	柚原 和真
+	#56 投手
+	武田 凛
+	#22 捕手
+	瓜生 凌汰
+	#24 内野手
+	鳥飼 竜之介
+	#31 内野手
+	村山 聖斗
+	#48 内野手
+	森本 大智
+	#51 内野手
+	柴田 和典
+	#28 外野手
+	西村 雄大
+	#43 外野手
+	角田 延大
+	#30 投手
+	宮﨑 大地
+	#47 外野手
+	宗岡 錬
+	#25 捕手
+	日野 友太
+	#37 内野手
+	松﨑 晴人
+	#0 外野手
+	石川 柚月
+	#34 投手
+	德永 怜皇
+	#52 投手
+	松村 和樹
+	#7 内野手
+	藤岡 陸 ○
+	＃41 内野手
+	水谷 克希
+	#10 外野手
+	樋口 昇樹 ◎
+	#57 外野手
+	真弓 大翔
+	#58 外野手
+	本多 将也
+	#96 外野手
+	河端 太陽
+ -->
+</body>
+
+</html>
