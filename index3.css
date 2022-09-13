@@ -1,0 +1,38 @@
+section{
+	display: flex;
+	flex-wrap: wrap;
+}
+.entry {
+	width: calc( 100% / 6 );
+	box-sizing: border-box;
+	padding: 5px;
+	margin-top: 5px;
+	
+}
+.position{
+	padding-left: 10px;
+}
+.name{
+	background-color: yellow;
+	padding: 5px;
+	text-align: center;
+}
+.year1 .name{
+	background-color: pink;
+}
+.year1{
+	margin-top: 20px;
+}
+footer{
+	display:  flex;
+	
+}
+footer img{
+	margin: auto;
+}
+.picturePlace{
+	width: 45%;
+}
+.pictureTeam{
+	width: 45%;
+}
