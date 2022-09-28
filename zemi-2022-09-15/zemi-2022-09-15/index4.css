@@ -1,0 +1,64 @@
+/* 
+	.year2 に対して、flexレイアウトの指定を行います 
+	要素を並べて、横をはみ出したら、折り返し（次の行へ移動します） 
+*/
+.year2,
+.year1 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* 
+	.year2 .entry　に対して背番号、ポジション、選手名の三つの情報に対してのレイアウトを決めます
+	幅は、全体を100％に対して6分割したものにしてください
+	線などを含めてのサイズ指定を行います
+	6分割されたサイズに外周部の余白5pxを設定します
+	セル上部は、上とのセルの間に外部余白を5pxで設定します
+*/
+.year2 .entry {
+	width: calc(100% / 6);
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+
+.year1 .entry {
+	width: calc(100% / 6);
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 5px;
+}
+
+/* 
+	.year2 .position
+		・左側の字下げを10pxで設定してください
+*/
+.year2 .position {
+	padding-left: 10px;
+}
+
+.year1 .position {
+	padding-left: 10px;
+}
+
+/* 
+	.year2 .name
+		・2年生の選手名の背景は黄色にします
+		・内側の余白は５ｐｘで設定してください
+		・テキストはセル内で中央に設定します。
+*/
+.year2 .name {
+	background-color: yellow;
+	padding: 5px;
+	text-align: center;
+}
+
+.year1 .name {
+	background-color: pink;
+	padding: 5px;
+	text-align: center;
+}
+
+img {
+	width: 40%;
+}
