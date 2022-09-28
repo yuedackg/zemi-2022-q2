@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="index3.css">
+	<style>
+		/* 
+			.year2 に対して、flexレイアウトの指定を行います 
+			要素を並べて、横をはみ出したら、折り返し（次の行へ移動します） 
+		*/
+		.year2, .year1 {
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		/* 
+			.year2 .entry　に対して背番号、ポジション、選手名の三つの情報に対してのレイアウトを決めます
+			幅は、全体を100％に対して6分割したものにしてください
+			線などを含めてのサイズ指定を行います
+			6分割されたサイズに外周部の余白5pxを設定します
+			セル上部は、上とのセルの間に外部余白を5pxで設定します
+		 */
+		.year2 .entry{
+			width: calc( 100% / 6 );
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-top: 5px;
+		}
+		 /* 
+		 	.year2 .position
+			 ・左側の字下げを10pxで設定してください
+		 */
+		.year2 .position{
+			padding-left: 10px;
+		}
+		 /* 
+		 	.year2 .name
+			 ・2年生の選手名の背景は黄色にします
+			 ・内側の余白は５ｐｘで設定してください
+			 ・テキストはセル内で中央に設定します。
+		 */
+		.year2 .name{
+			background-color: yellow;
+			padding: 5px;
+			text-align: center;
+		}
+		.img{
+			width: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<main>
+		<section class="year2">
+			<div class="entry">
+				<div class="position">#12 投手 </div>
+				<div class="name">和田 健 </div>
+			</div>
+			<div class="entry">
+				<div class="position"> #15 投手</div>
+				<div class="name"> 松下 尚樹</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #17 投手</div>
+				<div class="name"> 堀田　智貴</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #18 投手</div>
+				<div class="name"> 軸丸 泰行</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #20 投手</div>
+				<div class="name"> 東 泰佑</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #21 投手</div>
+				<div class="name"> 繁永 翁甫</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #38 投手</div>
+				<div class="name"> 平野 快旺</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #67 投手</div>
+				<div class="name"> 江上 祐矢</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #69 投手</div>
+				<div class="name"> 武田 颯人</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #82 投手</div>
+				<div class="name"> 坂田 航基</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #9 捕手</div>
+				<div class="name"> 石松 爽</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #23 捕手</div>
+				<div class="name"> 一ノ瀬 晃壽</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #61 捕手</div>
+				<div class="name"> 豊藤 駿稀</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #62 捕手</div>
+				<div class="name"> 河﨑 博和</div>
+			</div>
+			<div class="entry">
+				
+				<div class="position"> #63 捕手</div>
+				<div class="name"> 楢﨑 公平</div>
+			</div>
+			<div class="entry">
+				
+				<div class="position"> #4 内野手</div>
+				<div class="name"> 下澤 右京</div>
+			</div>
+			<div class="entry">
+				
+				<div class="position"> #26 内野手</div>
+				<div class="name"> 長嶺 良亮</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #33 内野手</div>
+				<div class="name"> 白水 一成</div>
+			</div>
+			<div class="entry">
+				
+				<div class="position"> #78 内野手</div>
+				<div class="name"> 櫻本 孝介</div>
+			</div>
+			<div class="entry">
+				<div class="position">#79 内野手 </div>
+				<div class="name"> 杉原 悠太</div>
+			</div>
+			<div class="entry">
+				<div class="position">#83 内野手  </div>
+				<div class="name"> 福嶋 優貴</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #84 内野手 </div>
+				<div class="name"> 中村 幸太</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #85 内野手</div>
+				<div class="name"> 平田 篤紀</div>
+			</div>
+			<div class="entry">
+				<div class="position">#86 内野手</div>
+				<div class="name"> 松本 翼</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #3 外野手</div>
+				<div class="name"> 関山 璃久斗</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #49 外野手</div>
+				<div class="name"> 森崎 辰弥</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #59 外野手</div>
+				<div class="name"> 松尾 翔二朗</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #60 外野手</div>
+				<div class="name"> 緒方 陽太</div>
+			</div>
+			<div class="entry">
+				<div class="position"> #66 外野手</div>
+				<div class="name"> 林 咲磨</div>
+			</div>
+			
+
+		</section>
+		<footer>
+			<img src="./images/集合写真_4.jpg" alt="全体の集合写真" class="pictureTeam">
+			<img src="./images/学校の所在地.png" alt="所在地について" class="picturePlace">
+		</footer>
+
+	</main>
+</body>
+
+</html>
