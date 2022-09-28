@@ -1,0 +1,14 @@
+table{
+    background-color: green;
+    color: white;
+}
+th{
+    width: 2em;
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+.ScoreBoardName{
+    width: 8em;
+}
