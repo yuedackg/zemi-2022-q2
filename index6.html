@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.layout{
+			box-sizing: border-box;
+			width: 50%;
+			border: solid 1px red;
+			background-color: aquamarine;
+		}
+		.yokonarabi{
+			display: flex;
+			flex-wrap: wrap;
+			width: 50%;
+		}
+	</style>
+</head>
+<body>
+<!-- 次の画面を作成する　明日、レイアウトの課題提出
++----------------------------------------------+
+|                                              |
+|                     a                        |
+|                                              |
++-------------------------+--------------------+
+|                         |                    |
+|                         |          c         |
+|             b           +----------+---------|
+|                         |          |    e    |
+|                         |     d    +----+----+
+|                         |          |  f |  g |
++-------------------------+---------------+----+
+
+-->
+	<div class="layout">a</div>
+	<div class="yokonarabi">
+		<div class="layout">b</div>
+		<div>
+			<div class="layout">c</div>
+			<div class="yokonarabi">
+				<div class="layout">d</div>
+				<div>
+					<div class="layout">e</div>
+					<div class="yokonarabi">
+						<div class="layout">f</div>
+						<div class="layout">g</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+
+
+	
+	
+
+
+
+
+</body>
+</html>
